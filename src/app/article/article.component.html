@@ -1,12 +1,40 @@
-<div class="form-group mt-5">
-    <div class="row col-md-12">
+<div class="col-md-12 form-group mt-5">
+    <div class="row">
         <div class="col-md-3 votes">
-            {{votes}}
-            points
+            <div>
+                    <span class="votes-number">{{article.votes}}</span>
+                    <span class="votes-text">points</span>
+            </div>
+          
         </div>
         <div class="col-md-9">
-            bbbb
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="" href="{{ article.link }}">
+                        <h3> {{ article.title }} </h3>
+                    </a>
+                    <div class="meta">({{ article.domain() }})</div>
+                </div>
+            </div>
+
+            <div class="row actions">
+                <div class="col-md-6">
+                    <li class="item">
+                        <a href (click)="voteUp()">
+                            <i class="fas fa-arrow-circle-up"></i>
+                            upvote
+                        </a>
+                    </li>
+                </div>
+                <div class="col-md-6">
+                    <li class="item">
+                        <a href (click)="voteDown()">
+                            <i class="fas fa-arrow-circle-down"></i>
+                            downvote
+                        </a>
+                    </li>
+                </div>
+            </div>
         </div>
     </div>
-
 </div>
