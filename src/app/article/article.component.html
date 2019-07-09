@@ -1,10 +1,8 @@
 <div class="col-md-12 form-group mt-5">
     <div class="row col-md-12">
         <div class="col-md-3 votes">
-            <div>
-                <span class="votes-number">{{article.votes}}</span>
-                <span class="votes-text">points</span>
-            </div>
+            <span class="votes-number">{{article.votes}}</span>
+            <span class="votes-text">points</span>
 
         </div>
         <div class="col-md-9">
@@ -18,7 +16,7 @@
             </div>
 
             <div class="row actions">
-                <div class="col-md-6">
+                <div class="col-md-2">
                     <li class="item">
                         <a href (click)="voteUp()">
                             <i class="fas fa-arrow-circle-up"></i>
@@ -26,7 +24,7 @@
                         </a>
                     </li>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <li class="item">
                         <a href (click)="voteDown()">
                             <i class="fas fa-arrow-circle-down"></i>
