@@ -1,2 +1,2 @@
 # INDEX - FIRST PAGE
-[One more document](/docs/readme.md)
+[One more document](./readme.md)
